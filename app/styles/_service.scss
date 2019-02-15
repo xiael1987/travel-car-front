@@ -1,0 +1,114 @@
+
+.service{
+ margin-left:150px;
+ height:auto;
+}
+
+h1 {
+  color: orange;
+  margin-top: 50px;
+  margin-left: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+h3 {
+  color: rgb(105, 101, 101);
+  display: flex;
+  font-size: 25px;
+  margin-top: -40px;
+  padding-top: 10px;
+  padding-left: auto;
+
+}
+
+i{
+  color:rgb(172, 161, 161);
+  height:15px;
+  width:15px;
+}
+.container2 {
+  height:80%;
+  width:80%;
+  padding: 50px;
+  display: flex;
+}
+
+.para1 {
+  padding: 10px;
+  height: 300px;
+  width: 350px;
+  color: rgb(70, 70, 70);
+
+}
+
+.para2 {
+  padding: 10px;
+  height: 300px;
+  width: 350px;
+  color: rgb(70, 70, 70);
+
+}
+
+.container3 {
+  height:80%;
+  width:80%;
+  padding: 50px;
+  display: flex;
+}
+
+
+.para3 {
+  padding: 10px;
+  height: 300px;
+  width: 350px;
+  color: rgb(70, 70, 70);
+}
+
+.para4 {
+  padding: 10px;
+  height: 300px;
+  width: 350px;
+  color: rgb(70, 70, 70);
+}
+
+.container4 {
+  height:80%;
+  width:80%;
+  padding: 50px;
+  display: flex;
+}
+
+.para5 {
+  padding: 10px;
+  height: 300px;
+  width: 350px;
+  color: rgb(70, 70, 70);
+}
+
+.para6 {
+  padding: 10px;
+  height: 300px;
+  width: 350px;
+  color: rgb(70, 70, 70);
+}
+
+//-----------------------------------
+
+@media only screen and (min-width: 750px){
+  form{
+    width: 60%;
+  }
+}
+body, html{
+  font-size: 100%;
+  position: center;
+  font-family: "Helvetica", sans-serif;
+}
+body,html{
+  margin:0;
+  padding: 0;
+}
+
+body{
+position:relative;
+min-height: 100vh;
+}

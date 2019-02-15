@@ -1,0 +1,224 @@
+@import 'form';
+@import 'service';
+@import 'devis';
+@import 'login';
+@import 'home';
+
+/* Chagnepassword*/
+.title {
+  margin: 10px 20px;
+}
+/* confirm */
+
+  .fa-thumbs-up{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+
+  }
+
+body, html{
+  font-size: 100%;
+  font-family: "Helvetica", sans-serif;
+
+
+}
+body,html{
+  margin:0;
+  padding: 0;
+
+}
+
+body{
+position:relative;
+min-height: 100vh;
+
+}
+
+
+//Logo
+
+.logo{
+  display: none;
+  margin-left: 10px;
+  width: 180px;
+  height: 80px;
+  position: relative;
+
+}
+
+
+
+h2{
+  color: white;
+}
+nav ul{
+  list-style: none;
+  padding:0;
+  background:rgb(7, 7, 7);
+  display: none;
+}
+
+.button-menu {
+  display: flex;
+  justify-content: flex-start;
+  margin:10px;
+  font-size: 20px;
+}
+.active {
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  opacity: 0.75;
+}
+
+nav ul li a{
+  color:#fff;
+  text-decoration: none;
+  padding: .8rem 1rem;
+  display: block;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+}
+// nav ul li{
+//   border-bottom: 0px solid #ddd;
+// }
+/*styling logo*/
+
+nav div:first-child{
+  background:rgba(34, 34, 34, 0);
+}
+nav div:first-child h1{
+
+  line-height: 0;
+  padding: .8rem 0rem;
+  text-align: center;
+}
+
+
+nav div:first-child h1, nav ul{
+
+  margin:0;
+}
+
+// container
+//.container{
+//}
+h3{
+  margin-top: 50px;
+  margin-left: 70px;
+}
+
+//main image
+
+.main-image img{
+  position : absolute;
+  margin-top: 5%;
+  width: 100%;
+  max-height: 400px;
+  position: relative;
+
+}
+
+
+/*Styling for larger devices*/
+
+@media only screen and (min-width: 750px){
+  nav{
+      display: flex;
+      justify-content: space-between;
+      background: rgb(0, 0, 0);
+      align-items: center;
+  }
+  //logo
+  .logo{
+    display: inline;
+  }
+  .active{
+    position: unset;
+    margin: 0;
+  }
+  .button-menu {
+    display: none;
+  }
+
+  nav ul{
+      display: flex;
+      align-items: center;
+      background:none;
+      flex-wrap: wrap;
+  }
+  nav div:first-child h1{
+      padding: 0;
+      margin:0 1rem;
+  }
+
+  nav ul li{
+      border-bottom:none;
+      flex: 1 0 auto;
+      position: relative;
+  }
+  nav ul li a{
+      padding:1.2rem 1rem;
+  }
+  nav ul li a::before, nav ul li a::after{
+      content: "";
+      position: absolute;
+      bottom:0;
+      right: 0;
+      width:0%;
+      height: 4px;
+      background:rgb(250, 243, 243);
+      transition: .2s width ease-in-out;
+  }
+
+  nav ul li a::before{
+      left:0;
+  }
+
+  nav ul li a:hover::after,nav ul li a:hover::before{
+      width: 50%;
+  }
+//----------------footer-------------------------------
+
+
+
+
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  margin-bottom: -100px;
+  position:absolute;
+  min-width: 100vh;
+
+  .droite {
+    bottom: 0;
+    position : fixed;
+    display: flex;
+    justify-content:flex-end;
+
+
+  }
+  .gauche {
+    bottom: 0;
+    position : fixed;
+    display: flex;
+    justify-content:flex-start;
+
+
+  }
+
+  p{
+    position : fixed;
+    width: 100%;
+    padding-left: 10px;
+    color: white;
+    //background: black;
+    bottom: 0;
+    font-size: 10px;
+  }
+}

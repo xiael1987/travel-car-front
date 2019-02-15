@@ -1,0 +1,72 @@
+
+<div class="flex">
+  <form action="" method="post">
+  <div>
+    {{!-- <label for="name">Nom :</label> --}}
+    <input type="text" id="name" name="user_name" placeholder="Nom">
+  </div>
+
+  <div>
+    {{!-- <label for="prenom">Prenom :</label> --}}
+    <input type="text" id="prenom" name="prenom" placeholder="Prenom">
+  </div>
+  <div>
+    {{!-- <label for="mail">e-mail :</label> --}}
+    <input type="email" id="mail" name="user_mail" placeholder="E-mail">
+  </div>
+
+  <div>
+    {{!-- <label for="telephon">tel:</label> --}}
+    <input type="tel" id="telephon" name="telephon" placeholder="telphon">
+  </div>
+  <div>
+    {{!-- <label for="msg">Message :</label> --}}
+    <textarea id="msg" name="user_message" placeholder="Message"></textarea>
+  </div>
+
+  <p class="preference">Preference de contact</p>
+
+  <div class="preference">
+    <input type="checkbox" id="email" name="scales">
+    <label for="scales">S'il vous plait répondre par email</label>
+  </div>
+
+  <div class="preference">
+    <input type="checkbox" id="tel" name="scales">
+    <label for="scales">S'il vous plait répondre par email</label>
+  </div>
+
+    <div>
+      {{!-- <label for="web">Site Web</label> --}}
+       <input type="text" id="web" name="web" placeholder="sit">
+    </div>
+    <address>
+      <div>
+        {{!-- <label for="adresse">Adress</label> --}}
+        <input type="text" id="adresse" name="adresse" placeholder="adresse">
+      </div>
+
+      <div>
+        {{!-- <label for="ville">ville</label> --}}
+        <input type="text" id="ville" name="ville" placeholder="ville">
+      </div>
+
+      <div>
+        {{!-- <label for="code-postal">code-postal</label> --}}
+        <input type="text" id="code-postal" name="code-postal" placeholder="code-postal">
+      </div>
+
+      <label class="country" for="code-postal">Pays</label>
+
+      <div class="countryChoose">
+        <select>
+          <option value="Belgique">Belgique</option>
+          <option value="Allemagne">Allemagne</option>
+          <option value="France">France</option>
+          <option value="Luxembourg">Luxembourg</option>
+        </select>
+      </div>
+
+    </address>
+</form>
+</div>

@@ -1,0 +1,11 @@
+.body {
+
+  height: 900px;
+  width: 900px;
+  color: rgb(70, 70, 70);
+}
+@media only screen and (min-width: 750px){
+  form{
+    width: 60%;
+  }
+}
