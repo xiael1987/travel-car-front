@@ -1,0 +1,51 @@
+
+<nav>
+  <div class="logo">
+    <a href="../homeagent"><img src="../img/logo.png"   height="80" width="180" alt=""></a>
+  </div>
+  <div class="button-menu">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <ul class="menu">
+    <li><a href="#">{{#link-to "accueilagent"}}Bienvenue{{/link-to}}</a></li>
+    <li><a href="#">{{#link-to "dossieragent"}}Liste de dossiers{{/link-to}}</a></li>
+    <li><a href="#">{{#link-to "chaufagent"}}Liste de chauffeurs{{/link-to}}</a></li>
+    <li><a href="#">{{#link-to "devisagent"}} Liste de devis{{/link-to}}</a></li>
+    <li><a href="#">{{#link-to "login"}}Log-in{{/link-to}}</a></li>
+
+  </ul>
+
+</nav>
+
+
+<div class="container">
+
+<h3>Bienvenue</h3>
+
+</div>
+
+
+
+
+<div class="main-image">
+  
+</div>
+
+
+{{outlet}}
+
+<script>
+  const btn = document.querySelector('.button-menu');
+  const menu = document.querySelector('.menu')
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+
+</script>
+
+
+
+
+
+

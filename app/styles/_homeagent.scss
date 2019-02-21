@@ -1,9 +1,6 @@
 @import 'form';
-@import 'service';
-@import 'devis';
-@import 'login';
-@import 'home';
 
+@import 'homeagent';
 /* Chagnepassword*/
 .title {
   margin: 10px 20px;
@@ -194,19 +191,20 @@ footer{
   margin-bottom: -100px;
   position:absolute;
   min-width: 100vh;
-  .blanc{
-    height: 10px;
-    width: 210px;
-  }
+
   .droite {
     bottom: 0;
-    position: left;
+    position : fixed;
+    display: flex;
+    justify-content:flex-end;
+
 
   }
   .gauche {
     bottom: 0;
+    position : fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-start;
 
 
   }

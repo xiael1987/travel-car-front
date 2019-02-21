@@ -1,24 +1,41 @@
 
-.container{
-position: center;
-}
-.main-image{
-  background-image:url(../img/bus.jpg);
-  background-position: center;
-}
 
 .blocvoyage{
 
   padding: 10px;
   width:800px;
   height: 300px;
-  border: solid 2px red;
+  border: solid 2px grey;
   border-radius: 15px;
-  background-color:rgb(164, 38, 38);
+  background-color:rgb(255, 255, 255);
   z-index:1;
   bottom: 0;
+  
+  display: flex;
+  justify-content:space-evenly;
+  
+  .nomprenom{
+    background-color: white(106, 17, 32);
 
   }
+ .arriverdepart{
+   background-color: pink;
+
+ }
+ .nombrepass{
+  background-color: cyan;
+
+}
+
+  a{
+    text-decoration: none;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+  
+  }
+
+  }
+
 
 
 

@@ -6,16 +6,34 @@ const Router = EmberRouter.extend({
   rootURL: config.rootURL
 });
 
-Router.map(function() {
+Router.map(function () {
   this.route('organiser');
   this.route('services');
   this.route('contact');
   this.route('devis');
-
   this.route('login');
   this.route('changepassword');
   this.route('confirm');
-  this.route('home');
+  
+  this.route('home', function () {
+    this.route('accueil');
+    this.route('confirm');
+    this.route('contact');
+    this.route('devis');
+    this.route('login');
+    this.route('changepassword');
+    this.route('organiser');
+    this.route('services');
+    this.route('profil');
+  });
+
+  this.route('homeagent', function () {
+    this.route('accueilagent');
+    this.route('devisagent');
+    this.route('chaufagent');
+    this.route('dossieragent');
+    this.route('enquetagent');
+  });
 });
 
 export default Router;
