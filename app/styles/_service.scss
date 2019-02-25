@@ -1,14 +1,18 @@
 
+
+
 .service{
- margin-left:150px;
  height:auto;
+//  display: flex;
+// justify-content: center;
 }
 
 h1 {
   color: orange;
   margin-top: 50px;
   margin-left: 50px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 h3 {
   color: rgb(105, 101, 101);
@@ -24,6 +28,9 @@ i{
   color:rgb(172, 161, 161);
   height:15px;
   width:15px;
+  float: left;
+  margin-top: 60px;
+
 }
 .container2 {
   height:80%;
@@ -93,22 +100,29 @@ i{
 
 //-----------------------------------
 
-@media only screen and (min-width: 750px){
+@media only screen and (min-width: 450px){
   form{
     width: 60%;
+    flex-direction: column;
   }
-}
-body, html{
-  font-size: 100%;
-  position: center;
-  font-family: "Helvetica", sans-serif;
-}
-body,html{
-  margin:0;
-  padding: 0;
-}
 
-body{
-position:relative;
-min-height: 100vh;
+
+// #body, html{
+//   flex-direction: column;
+
+
+//   font-size: 100%;
+//   font-family: "Helvetica", sans-serif;
+//   display: block;
+
+// }
+// body,html{
+
+//   margin:0;
+//   padding: 0;
+// }
+
+// body{
+// min-height: 100vh;
+// }
 }
